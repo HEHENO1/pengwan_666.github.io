@@ -2,70 +2,158 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>张三 · 前端工程师</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="images/avatar.jpg" type="image/jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>万仙僧 · AI Agent 算法工程师</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
-    <img class="avatar" src="images/avatar.jpg" alt="张三头像" />
-    <div class="intro">
-      <h1>张三</h1>
-      <p>前端工程师 · 北京</p>
-      <p class="contacts">
-        <a href="mailto:zhangsan@example.com">zhangsan@example.com</a> ·
-        <a href="https://github.com/zhangsan">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/zhangsan/">LinkedIn</a>
+    <div class="hero__content container">
+      <p class="hero__badge">AI Agent Architect · Tech Lead</p>
+      <h1>万仙僧</h1>
+      <h2>AI Agent 算法工程师</h2>
+      <p class="hero__desc">
+        打造行业首个智能座舱智能体中心，统筹上线 <span class="highlight">X+</span> 个场景 Agent，构建车载智慧体验 3.0。
+        擅长 C/C++，熟悉 Java / Python，具备成熟的团队领导与跨部门协同能力。
       </p>
-      <a class="btn" href="assets/resume.pdf" target="_blank">下载 PDF 简历</a>
+      <div class="hero__cta">
+        <a href="mailto:contact@example.com" class="btn primary">Email Me</a>
+        <a href="#experience" class="btn ghost">查看经历</a>
+      </div>
     </div>
+    <div class="hero__bg"></div>
   </header>
 
-  <section class="section">
-    <h2>个人简介</h2>
-    <p>拥有 3 年 Web 前端开发经验，擅长 React、TypeScript 与可视化开发。关注用户体验和性能优化，具有完整的需求分析、设计与交付能力。</p>
-  </section>
+  <main>
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__title">
+          <p>ABOUT</p>
+          <h3>关于我</h3>
+        </div>
+        <div class="about__grid">
+          <p>
+            多年智能座舱与多模态智能体研发经验，专注于 Agent 架构设计、工具编排、知识检索与对话管理。
+            负责从感知到推理到交互的整链路创新，推动智能座舱从被动交互走向主动伴随。
+          </p>
+          <ul class="info-list">
+            <li><span>位置：</span>上海 / 可远程</li>
+            <li><span>邮箱：</span>contact@example.com</li>
+            <li><span>GitHub：</span><a href="https://github.com/yourname" target="_blank">github.com/yourname</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section class="section">
-    <h2>技能栈</h2>
-    <ul class="skills">
-      <li><strong>语言：</strong>JavaScript (ES6+)、TypeScript、HTML5、CSS3/Sass</li>
-      <li><strong>框架：</strong>React、Next.js、Vue3、Vite</li>
-      <li><strong>工具：</strong>Git、Webpack、Jest、Figma</li>
-      <li><strong>其他：</strong>跨端适配、性能优化、数据可视化</li>
-    </ul>
-  </section>
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section__title">
+          <p>EXPERIENCE</p>
+          <h3>工作经历</h3>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__header">
+              <h4>智能座舱智能体中心 · 负责人</h4>
+              <span>2022.06 – 至今</span>
+            </div>
+            <p>端到端打造行业首个 <strong>智能座舱智能体中心</strong>，规划并上线 X+ 个场景 Agent（导航助手、娱乐伴侣、诊断助理等），实现全车一体化智能交互。</p>
+            <ul>
+              <li>构建意图解析 + 工具编排框架，毫秒级响应车规事件。</li>
+              <li>牵头 20+ 人跨部门团队，建立敏捷交付机制，NPI 周期缩短 45%。</li>
+              <li>搭建 A/B 自动评测体系，交互成功率提升 32%，用户满意度提升 18%。</li>
+            </ul>
+          </article>
 
-  <section class="section">
-    <h2>项目经验</h2>
+          <article class="timeline__item">
+            <div class="timeline__header">
+              <h4>智能驾驶算法团队 · Tech Lead</h4>
+              <span>2019.04 – 2022.05</span>
+            </div>
+            <p>负责多传感器融合、语音语义理解与车载 HMI 智能化，主导多项高可靠算法落地。</p>
+            <ul>
+              <li>重构边缘推理框架，算力利用率提升 27%，功耗下降 12%。</li>
+              <li>带领团队完成 DMS/HMI 联动方案，实现对驾驶员状态的主动响应。</li>
+              <li>指导 6 名工程师成长为模块负责人，搭建知识沉淀体系。</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <article class="project">
-      <h3>智能分析平台 · 前端负责人 <span>2023.06 - 2024.02</span></h3>
-      <ul>
-        <li>基于 React + Ant Design Pro 搭建 B 端管理平台，负责整体架构设计与组件封装。</li>
-        <li>引入模块化路由与微前端方案，支持 6 个业务团队并行开发，部署效率提升 40%。</li>
-        <li>实现图表配置化，结合 ECharts/AntV 实现 15+ 数据大屏模块。</li>
-      </ul>
-    </article>
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__title">
+          <p>SKILLS</p>
+          <h3>核心技能</h3>
+        </div>
+        <div class="skill-cards">
+          <div class="skill-card">
+            <h4>语言 & 平台</h4>
+            <p>C / C++（主力），Java，Python，Shell</p>
+          </div>
+          <div class="skill-card">
+            <h4>AI & Agent</h4>
+            <p>LLM Prompting、Tool Orchestration、RAG、知识图谱、强化学习</p>
+          </div>
+          <div class="skill-card">
+            <h4>系统能力</h4>
+            <p>ROS、QNX、Linux、CUDA、TensorRT、分布式推理</p>
+          </div>
+          <div class="skill-card">
+            <h4>领导力</h4>
+            <p>团队管理、跨部门协作、OKR/KPI 设计、Mentor 机制</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <article class="project">
-      <h3>电商官网重构 · 前端工程师 <span>2022.04 - 2023.05</span></h3>
-      <ul>
-        <li>负责官网的响应式改版，移动端转化率提升 18%。</li>
-        <li>使用 Next.js + SSR 提升首屏渲染速度 35%，并通过 Lighthouse 达到 90+ 评分。</li>
-        <li>搭建自动化测试流程，覆盖关键流程用例 20+，降低回归成本。</li>
-      </ul>
-    </article>
-  </section>
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__title">
+          <p>PROJECTS</p>
+          <h3>代表项目</h3>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h4>智能座舱 Agent Hub</h4>
+            <p>构建统一意图解析 + 实时工具调用架构，支持车载多场景协同。</p>
+            <ul>
+              <li>技术栈：LLM Router、知识检索、流式语音交互</li>
+              <li>效果：车主日活提升 18%，用户投诉率下降 40%</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h4>Agent Auto-Eval Pipeline</h4>
+            <p>打造自动化评测体系，闭环语义准确率、执行成功率、对话流畅度。</p>
+            <ul>
+              <li>技术栈：LangChain、OpenAI Functions、自建 Benchmark</li>
+              <li>效果：评测周期从 5 天压缩至 2 小时</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section class="section">
-    <h2>教育背景</h2>
-    <p>北京理工大学 · 软件工程 · 本科 · 2016 - 2020</p>
-  </section>
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__title">
+          <p>CONTACT</p>
+          <h3>联系我</h3>
+        </div>
+        <p>欢迎交流 Agent 架构、智能座舱、团队管理等话题。</p>
+        <a href="mailto:contact@example.com" class="btn primary">contact@example.com</a>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <p>© 2024 张三 | Powered by GitHub Pages</p>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 万仙僧 · Powered by GitHub Pages</p>
+    </div>
   </footer>
 </body>
 </html>
